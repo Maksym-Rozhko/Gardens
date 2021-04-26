@@ -55,9 +55,9 @@
         <path d="M11.948 4.94a.682.682 0 100-1.364.682.682 0 000 1.364zM5.86 3.122a.682.682 0 100-1.364.682.682 0 000 1.364zm8.67 3.974a.648.648 0 100-1.296.648.648 0 000 1.296zM9.167 8.099a.648.648 0 100-1.296.648.648 0 000 1.296zM3.089 6.14a.648.648 0 100-1.296.648.648 0 000 1.296z" fill="#87AE1B"></path>
     </symbol>
     <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" id="arrow-left">
-        <circle opacity=".4" cx="20" cy="20" r="20" transform="rotate(90 20 20)" fill="#FCFCFC"></circle>
+        <circle opacity=".4" cx="20" cy="20" r="20" transform="rotate(90 20 20)"></circle>
         <g clip-path="url(#clip0)">
-        <path d="M15.44 20c0-.286.11-.573.328-.791l6.88-6.88a1.12 1.12 0 111.584 1.585L18.145 20l6.087 6.087a1.12 1.12 0 11-1.585 1.584l-6.88-6.88A1.117 1.117 0 0115.44 20z" fill="#FCFCFC"></path>
+        <path d="M15.44 20c0-.286.11-.573.328-.791l6.88-6.88a1.12 1.12 0 111.584 1.585L18.145 20l6.087 6.087a1.12 1.12 0 11-1.585 1.584l-6.88-6.88A1.117 1.117 0 0115.44 20z"></path>
         </g>
         <defs>
         <clipPath id="clip0">
@@ -66,9 +66,9 @@
         </defs>
     </symbol>
     <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" id="arrow-right">
-        <circle opacity=".4" cx="20" cy="20" r="20" transform="rotate(-90 20 20)" fill="#FCFCFC"></circle>
+        <circle opacity=".4" cx="20" cy="20" r="20" transform="rotate(-90 20 20)"></circle>
         <g clip-path="url(#clip0)">
-        <path d="M24.56 20c0 .286-.11.573-.328.791l-6.88 6.88a1.12 1.12 0 11-1.584-1.584l6.087-6.088-6.087-6.087a1.12 1.12 0 111.585-1.584l6.88 6.88c.218.218.327.505.327.791z" fill="#FCFCFC"></path>
+        <path d="M24.56 20c0 .286-.11.573-.328.791l-6.88 6.88a1.12 1.12 0 11-1.584-1.584l6.087-6.088-6.087-6.087a1.12 1.12 0 111.585-1.584l6.88 6.88c.218.218.327.505.327.791z"></path>
         </g>
         <defs>
         <clipPath id="clip0">
@@ -165,9 +165,9 @@
 </svg>
 
 
-
-
-
+<svg class="icon">
+  <use xlink:href="assets/images/sprite.svg#btn-arrow"></use>
+</svg>
 <svg class="icon">
   <use xlink:href="assets/images/sprite.svg#location"></use>
 </svg>
