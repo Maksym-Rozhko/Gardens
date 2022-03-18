@@ -7,8 +7,8 @@
     <link rel="icon" type="image/png" href="assets/images/icons/favicon.ico">
     <title>Таировские Сады</title>
     <link rel="stylesheet" href="assets/css/normolize.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/fancybox.min.css" />
     <link rel="stylesheet" href="assets/css/fonts.css">
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
@@ -16,33 +16,33 @@
     <header class="header">
         <div class="wrapper">
             <div class="header__desktop">
-                <a href="/" class="header__logo">
+                <a href="#home" class="header__logo">
                     <img class="logo" src="assets/images/main-slides/logo.png" alt="ТАИРОВСКИЕ САДЫ">
                 </a>
                 <nav class="navigation">
                     <ul class="nav-list">
                         <li class="nav-list__item">
-                            <a href="#" class="nav-list__link">
+                            <a href="#aboutBuilding" class="nav-list__link">
                                 О жилом комплексе
                             </a>
                         </li>
                         <li class="nav-list__item">
-                            <a href="#" class="nav-list__link">
+                            <a href="#planning" class="nav-list__link">
                                 Планировки
                             </a>
                         </li>
                         <li class="nav-list__item">
-                            <a href="#" class="nav-list__link">
+                            <a href="#price" class="nav-list__link">
                                 Цены
                             </a>
                         </li>
                         <li class="nav-list__item">
-                            <a href="#" class="nav-list__link">
+                            <a href="#apartaments" class="nav-list__link">
                                 Квартиры
                             </a>
                         </li>
                         <li class="nav-list__item">
-                            <a href="#" class="nav-list__link">
+                            <a href="#contacts" class="nav-list__link">
                                 Инфраструктура
                             </a>
                         </li>
@@ -53,44 +53,44 @@
                 </div>
                 <div class="navigation-bg"></div>
                 <nav class="navigation__mobile">
-                    <a href="/" class="header__logo">
+                    <a href="#home" class="header__logo">
                         <img class="logo" src="assets/images/main-slides/logo-white.png" alt="ТАИРОВСКИЕ САДЫ">
                     </a>
                     <ul class="nav-list">
                         <li class="nav-list__item">
-                            <a href="#" class="nav-list__link">
+                            <a href="#aboutBuilding" class="nav-list__link">
                                 О жилом комплексе
                             </a>
                         </li>
                         <li class="nav-list__item">
-                            <a href="#" class="nav-list__link">
+                            <a href="#planning" class="nav-list__link">
                                 Планировки
                             </a>
                         </li>
                         <li class="nav-list__item">
-                            <a href="#" class="nav-list__link">
+                            <a href="#price" class="nav-list__link">
                                 Цены
                             </a>
                         </li>
                         <li class="nav-list__item">
-                            <a href="#" class="nav-list__link">
+                            <a href="#apartaments" class="nav-list__link">
                                 Квартиры
                             </a>
                         </li>
                         <li class="nav-list__item">
-                            <a href="#" class="nav-list__link">
+                            <a href="#contacts" class="nav-list__link">
                                 Инфраструктура
                             </a>
                         </li>
                     </ul>
                     <div class="phones-block">
-                        <a href="tel:+38XXXxxxxxxx" class="phone-number">
+                        <a href="tel:+3xxxxxxxxxx" class="phone-number">
                             <svg class="icon">
                                 <use xlink:href="assets/images/sprite.svg#phone"></use>
                             </svg>
                             +38 (XXX) xxx xx xx
                         </a>
-                        <a href="tel:+38XXXxxxxxxx" class="phone-number">
+                        <a href="tel:+38xxxxxxxxxx" class="phone-number">
                             <svg class="icon">
                                 <use xlink:href="assets/images/sprite.svg#phone"></use>
                             </svg>
@@ -100,20 +100,20 @@
                 </nav>
                 <div class="header__phones">
                     <div class="phones-block">
-                        <a href="tel:+38XXXxxxxxxx" class="phone-number">
+                        <a href="tel:+38xxxxxxxxxx" class="phone-number">
                             <svg class="icon">
                                 <use xlink:href="assets/images/sprite.svg#phone"></use>
                             </svg>
                             +38 (XXX) xxx xx xx
                         </a>
-                        <a href="tel:+38XXXxxxxxxx" class="phone-number">
+                        <a href="tel:+38xxxxxxxxxx" class="phone-number">
                             <svg class="icon">
                                 <use xlink:href="assets/images/sprite.svg#phone"></use>
                             </svg>
                             +38 (XXX) xxx xx xx
                         </a>
                     </div>
-                    <button type="button" class="order-call">
+                    <button type="button" class="order-call callback-form">
                         <svg class="icon">
                             <use xlink:href="assets/images/sprite.svg#phone"></use>
                         </svg>
@@ -123,7 +123,7 @@
             </div>
         </div>
     </header>
-    <div class="main-slider swiper-container">
+    <div id="home" class="main-slider swiper-container">
         <div class="swiper-wrapper">
             <div class="swiper-slide"> 
                 <div class="swiper-slide__content swiper-slide__main">
@@ -148,7 +148,7 @@
                                 Оставьте заявку на консультацию и наш менеджер расскажет вам об обьекте 
                                 в мельчайших подробностях
                             </p>
-                            <button type="button" class="main-button">
+                            <button type="button" class="main-button scroll-to-form">
                                 Оставить заявку 
                                 <svg class="icon">
                                     <use xlink:href="assets/images/sprite.svg#btn-arrow"></use>
@@ -181,7 +181,7 @@
                                 Оставьте заявку на консультацию и наш менеджер расскажет вам об обьекте 
                                 в мельчайших подробностях
                             </p>
-                            <button type="button" class="main-button">
+                            <button type="button" class="main-button scroll-to-form">
                                 Оставить заявку 
                                 <svg class="icon">
                                     <use xlink:href="assets/images/sprite.svg#btn-arrow"></use>
@@ -214,7 +214,7 @@
                                 Оставьте заявку на консультацию и наш менеджер расскажет вам об обьекте 
                                 в мельчайших подробностях
                             </p>
-                            <button type="button" class="main-button">
+                            <button type="button" class="main-button scroll-to-form">
                                 Оставить заявку 
                                 <svg class="icon">
                                     <use xlink:href="assets/images/sprite.svg#btn-arrow"></use>
@@ -254,7 +254,7 @@
             </div>
         </div>
     </div>
-    <div class="about-building">
+    <div id="aboutBuilding" class="about-building">
         <div class="wrapper">
             <div class="about-building__content">
                 <h2 class="section-title">
@@ -272,7 +272,7 @@
                     и Вильямса. Именно на этой территории будет возведен один из самых 
                     уникальных микрорайонов юга Украины — «Таировские Сады».
                 </p>
-                <button type="button" class="main-button">
+                <button type="button" class="main-button scroll-to-form">
                     Узнать подробнее
                     <svg class="icon">
                         <use xlink:href="assets/images/sprite.svg#btn-arrow"></use>
@@ -281,7 +281,7 @@
             </div>
         </div>
     </div>
-    <div class="sections-plann">
+    <div id="planning" class="sections-plann">
         <div class="wrapper">
             <h2 class="section-title">
                 СЕКЦИИ <span>И ПЛАНИРОВКИ</span>
@@ -550,7 +550,7 @@
                             </div>
                         </div>
                     </div>
-                    <button type="button" class="main-button">
+                    <button type="button" class="main-button scroll-to-form">
                         Узнать подробнее
                         <svg class="icon">
                             <use xlink:href="assets/images/sprite.svg#btn-arrow"></use>
@@ -560,716 +560,717 @@
                 <!-- ПЛАН КВАРТИР ПО ЭТАЖАМ 1-Я СЕКЦИИ -->
                 <div class="building1_section1 swiper-container swiper__container">
                     <div class="swiper-wrapper">
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images1">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-2.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_1/section1/section-2.jpg" class="planning swiper-slide" data-fancybox="images1">
+                            <img src="assets/images/section/building_1/section1/section-2.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-3.jpg" class="planning swiper-slide" data-fancybox="images1">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-3.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_1/section1/section-2.jpg" class="planning swiper-slide" data-fancybox="images1">
+                            <img src="assets/images/section/building_1/section1/section-2.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images1">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-2.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_1/section1/section-3.jpg" class="planning swiper-slide" data-fancybox="images1">
+                            <img src="assets/images/section/building_1/section1/section-3.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images1">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-3.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_1/section1/section-4.jpeg" class="planning swiper-slide" data-fancybox="images1">
+                            <img src="assets/images/section/building_1/section1/section-4.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images1">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-2.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_1/section1/section-5.jpeg" class="planning swiper-slide" data-fancybox="images1">
+                            <img src="assets/images/section/building_1/section1/section-5.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images1">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-3.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_1/section1/section-6.jpeg" class="planning swiper-slide" data-fancybox="images1">
+                            <img src="assets/images/section/building_1/section1/section-6.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images1">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-2.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_1/section1/section-7.jpeg" class="planning swiper-slide" data-fancybox="images1">
+                            <img src="assets/images/section/building_1/section1/section-7.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images1">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-3.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_1/section1/section-8.jpeg" class="planning swiper-slide" data-fancybox="images1">
+                            <img src="assets/images/section/building_1/section1/section-8.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images1">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-2.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_1/section1/section-9.jpeg" class="planning swiper-slide" data-fancybox="images1">
+                            <img src="assets/images/section/building_1/section1/section-9.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images1">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-3.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_1/section1/section-10.jpeg" class="planning swiper-slide" data-fancybox="images1">
+                            <img src="assets/images/section/building_1/section1/section-10.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images1">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-2.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_1/section1/section-11.jpeg" class="planning swiper-slide" data-fancybox="images1">
+                            <img src="assets/images/section/building_1/section1/section-11.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images1">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-3.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_1/section1/section-12.jpeg" class="planning swiper-slide" data-fancybox="images1">
+                            <img src="assets/images/section/building_1/section1/section-12.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images1">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-2.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_1/section1/section-13.jpeg" class="planning swiper-slide" data-fancybox="images1">
+                            <img src="assets/images/section/building_1/section1/section-13.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images1">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-3.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_1/section1/section-14.jpeg" class="planning swiper-slide" data-fancybox="images1">
+                            <img src="assets/images/section/building_1/section1/section-14.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images1">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-2.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_1/section1/section-15.jpeg" class="planning swiper-slide" data-fancybox="images1">
+                            <img src="assets/images/section/building_1/section1/section-15.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images1">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-3.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_1/section1/section-16.jpeg" class="planning swiper-slide" data-fancybox="images1">
+                            <img src="assets/images/section/building_1/section1/section-16.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images1">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-2.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_1/section1/section-17.jpeg" class="planning swiper-slide" data-fancybox="images1">
+                            <img src="assets/images/section/building_1/section1/section-17.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images1">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-3.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_1/section1/section-18.jpeg" class="planning swiper-slide" data-fancybox="images1">
+                            <img src="assets/images/section/building_1/section1/section-18.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images1">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-2.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_1/section1/section-19.jpeg" class="planning swiper-slide" data-fancybox="images1">
+                            <img src="assets/images/section/building_1/section1/section-19.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images1">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-3.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_1/section1/section-20.jpeg" class="planning swiper-slide" data-fancybox="images1">
+                            <img src="assets/images/section/building_1/section1/section-20.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images1">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-2.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_1/section1/section-21.jpeg" class="planning swiper-slide" data-fancybox="images1">
+                            <img src="assets/images/section/building_1/section1/section-21.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images1">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-3.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_1/section1/section-22.jpeg" class="planning swiper-slide" data-fancybox="images1">
+                            <img src="assets/images/section/building_1/section1/section-22.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images1">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-2.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_1/section1/section-23.jpeg" class="planning swiper-slide" data-fancybox="images1">
+                            <img src="assets/images/section/building_1/section1/section-23.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images1">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-3.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_1/section1/section-24.jpeg" class="planning swiper-slide" data-fancybox="images1">
+                            <img src="assets/images/section/building_1/section1/section-24.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
                     </div>
                 </div>
                 <!-- ПЛАН КВАРТИР ПО ЭТАЖАМ 2-Я СЕКЦИИ -->
                 <div class="building1_section2 swiper-container hidden-sections-slides swiper__container">
                     <div class="swiper-wrapper">
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images2">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-2.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_1/section2/section-2.jpeg" class="planning swiper-slide" data-fancybox="images2">
+                            <img src="assets/images/section/building_1/section2/section-2.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-3.jpg" class="planning swiper-slide" data-fancybox="images2">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-3.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_1/section2/section-2.jpeg" class="planning swiper-slide" data-fancybox="images2">
+                            <img src="assets/images/section/building_1/section2/section-2.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images2">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-2.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_1/section2/section-3.jpeg" class="planning swiper-slide" data-fancybox="images2">
+                            <img src="assets/images/section/building_1/section2/section-3.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images2">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-3.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_1/section2/section-4.jpeg" class="planning swiper-slide" data-fancybox="images2">
+                            <img src="assets/images/section/building_1/section2/section-4.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images2">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-2.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_1/section2/section-5.jpeg" class="planning swiper-slide" data-fancybox="images2">
+                            <img src="assets/images/section/building_1/section2/section-5.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images2">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-3.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_1/section2/section-6.jpeg" class="planning swiper-slide" data-fancybox="images2">
+                            <img src="assets/images/section/building_1/section2/section-6.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images2">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-2.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_1/section2/section-7.jpeg" class="planning swiper-slide" data-fancybox="images2">
+                            <img src="assets/images/section/building_1/section2/section-7.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images2">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-3.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_1/section2/section-8.jpeg" class="planning swiper-slide" data-fancybox="images2">
+                            <img src="assets/images/section/building_1/section2/section-8.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images2">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-2.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_1/section2/section-9.jpeg" class="planning swiper-slide" data-fancybox="images2">
+                            <img src="assets/images/section/building_1/section2/section-9.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images2">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-3.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_1/section2/section-10.jpeg" class="planning swiper-slide" data-fancybox="images2">
+                            <img src="assets/images/section/building_1/section2/section-10.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images2">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-2.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_1/section2/section-11.jpeg" class="planning swiper-slide" data-fancybox="images2">
+                            <img src="assets/images/section/building_1/section2/section-11.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images2">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-3.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_1/section2/section-12.jpeg" class="planning swiper-slide" data-fancybox="images2">
+                            <img src="assets/images/section/building_1/section2/section-12.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images2">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-2.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_1/section2/section-13.jpeg" class="planning swiper-slide" data-fancybox="images2">
+                            <img src="assets/images/section/building_1/section2/section-13.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images2">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-3.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_1/section2/section-14.jpeg" class="planning swiper-slide" data-fancybox="images2">
+                            <img src="assets/images/section/building_1/section2/section-14.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images2">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-2.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_1/section2/section-15.jpeg" class="planning swiper-slide" data-fancybox="images2">
+                            <img src="assets/images/section/building_1/section2/section-15.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
                     </div>
                 </div>
                 <!-- ПЛАН КВАРТИР ПО ЭТАЖАМ 3-Я СЕКЦИИ -->
                 <div class="building1_section3 swiper-container hidden-sections-slides swiper__container">
                     <div class="swiper-wrapper">
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images3">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-2.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_1/section3/section-2.jpeg" class="planning swiper-slide" data-fancybox="images3">
+                            <img src="assets/images/section/building_1/section3/section-2.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-3.jpg" class="planning swiper-slide" data-fancybox="images3">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-3.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_1/section3/section-2.jpeg" class="planning swiper-slide" data-fancybox="images3">
+                            <img src="assets/images/section/building_1/section3/section-2.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images3">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-2.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_1/section3/section-3.jpeg" class="planning swiper-slide" data-fancybox="images3">
+                            <img src="assets/images/section/building_1/section3/section-3.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images3">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-3.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_1/section3/section-4.jpeg" class="planning swiper-slide" data-fancybox="images3">
+                            <img src="assets/images/section/building_1/section3/section-4.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images3">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-2.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_1/section3/section-5.jpeg" class="planning swiper-slide" data-fancybox="images3">
+                            <img src="assets/images/section/building_1/section3/section-5.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images3">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-3.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_1/section3/section-6.jpeg" class="planning swiper-slide" data-fancybox="images3">
+                            <img src="assets/images/section/building_1/section3/section-6.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images3">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-2.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_1/section3/section-7.jpeg" class="planning swiper-slide" data-fancybox="images3">
+                            <img src="assets/images/section/building_1/section3/section-7.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images3">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-3.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_1/section3/section-8.jpeg" class="planning swiper-slide" data-fancybox="images3">
+                            <img src="assets/images/section/building_1/section3/section-8.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images3">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-2.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_1/section3/section-9.jpeg" class="planning swiper-slide" data-fancybox="images3">
+                            <img src="assets/images/section/building_1/section3/section-9.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images3">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-3.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_1/section3/section-10.jpeg" class="planning swiper-slide" data-fancybox="images3">
+                            <img src="assets/images/section/building_1/section3/section-10.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images3">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-2.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_1/section3/section-11.jpeg" class="planning swiper-slide" data-fancybox="images3">
+                            <img src="assets/images/section/building_1/section3/section-11.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images3">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-3.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_1/section3/section-12.jpeg" class="planning swiper-slide" data-fancybox="images3">
+                            <img src="assets/images/section/building_1/section3/section-12.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images3">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-2.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_1/section3/section-13.jpeg" class="planning swiper-slide" data-fancybox="images3">
+                            <img src="assets/images/section/building_1/section3/section-13.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images3">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-3.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_1/section3/section-14.jpeg" class="planning swiper-slide" data-fancybox="images3">
+                            <img src="assets/images/section/building_1/section3/section-14.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images3">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-2.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_1/section3/section-15.jpeg" class="planning swiper-slide" data-fancybox="images3">
+                            <img src="assets/images/section/building_1/section3/section-15.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images3">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-2.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_1/section3/section-16.jpeg" class="planning swiper-slide" data-fancybox="images3">
+                            <img src="assets/images/section/building_1/section3/section-16.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
                     </div>
                 </div>
                 <!-- ПЛАН КВАРТИР ПО ЭТАЖАМ 4-Я СЕКЦИИ -->
                 <div class="building1_section4 swiper-container hidden-sections-slides swiper__container">
                     <div class="swiper-wrapper">
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images4">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-2.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_1/section4/section-2.jpeg" class="planning swiper-slide" data-fancybox="images4">
+                            <img src="assets/images/section/building_1/section4/section-2.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-3.jpg" class="planning swiper-slide" data-fancybox="images4">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-3.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_1/section4/section-2.jpeg" class="planning swiper-slide" data-fancybox="images4">
+                            <img src="assets/images/section/building_1/section4/section-2.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images4">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-2.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_1/section4/section-3.jpeg" class="planning swiper-slide" data-fancybox="images4">
+                            <img src="assets/images/section/building_1/section4/section-3.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images4">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-3.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_1/section4/section-4.jpeg" class="planning swiper-slide" data-fancybox="images4">
+                            <img src="assets/images/section/building_1/section4/section-4.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images4">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-2.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_1/section4/section-5.jpeg" class="planning swiper-slide" data-fancybox="images4">
+                            <img src="assets/images/section/building_1/section4/section-5.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images4">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-3.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_1/section4/section-6.jpeg" class="planning swiper-slide" data-fancybox="images4">
+                            <img src="assets/images/section/building_1/section4/section-6.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images4">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-2.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_1/section4/section-7.jpeg" class="planning swiper-slide" data-fancybox="images4">
+                            <img src="assets/images/section/building_1/section4/section-7.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images4">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-3.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_1/section4/section-8.jpeg" class="planning swiper-slide" data-fancybox="images4">
+                            <img src="assets/images/section/building_1/section4/section-8.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images4">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-2.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_1/section4/section-9.jpeg" class="planning swiper-slide" data-fancybox="images4">
+                            <img src="assets/images/section/building_1/section4/section-9.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images4">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-3.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_1/section4/section-10.jpeg" class="planning swiper-slide" data-fancybox="images4">
+                            <img src="assets/images/section/building_1/section4/section-10.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images4">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-2.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_1/section4/section-11.jpeg" class="planning swiper-slide" data-fancybox="images4">
+                            <img src="assets/images/section/building_1/section4/section-11.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images4">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-3.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_1/section4/section-12.jpeg" class="planning swiper-slide" data-fancybox="images4">
+                            <img src="assets/images/section/building_1/section4/section-12.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images4">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-2.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_1/section4/section-13.jpeg" class="planning swiper-slide" data-fancybox="images4">
+                            <img src="assets/images/section/building_1/section4/section-13.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images4">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-3.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_1/section4/section-14.jpeg" class="planning swiper-slide" data-fancybox="images4">
+                            <img src="assets/images/section/building_1/section4/section-14.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images4">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-2.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_1/section4/section-15.jpeg" class="planning swiper-slide" data-fancybox="images4">
+                            <img src="assets/images/section/building_1/section4/section-15.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images4">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-3.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_1/section4/section-16.jpeg" class="planning swiper-slide" data-fancybox="images4">
+                            <img src="assets/images/section/building_1/section4/section-16.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images4">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-2.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_1/section4/section-17.jpeg" class="planning swiper-slide" data-fancybox="images4">
+                            <img src="assets/images/section/building_1/section4/section-17.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
                     </div>
                 </div>
                 <!-- ПЛАН КВАРТИР ПО ЭТАЖАМ 5-Я СЕКЦИИ -->
                 <div class="building1_section5 swiper-container hidden-sections-slides swiper__container">
                     <div class="swiper-wrapper">
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images5">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-2.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_1/section5/section-2.jpeg" class="planning swiper-slide" data-fancybox="images5">
+                            <img src="assets/images/section/building_1/section5/section-2.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-3.jpg" class="planning swiper-slide" data-fancybox="images5">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-3.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_1/section5/section-2.jpeg" class="planning swiper-slide" data-fancybox="images5">
+                            <img src="assets/images/section/building_1/section5/section-2.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images5">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-2.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_1/section5/section-3.jpeg" class="planning swiper-slide" data-fancybox="images5">
+                            <img src="assets/images/section/building_1/section5/section-3.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images5">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-3.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_1/section5/section-4.jpeg" class="planning swiper-slide" data-fancybox="images5">
+                            <img src="assets/images/section/building_1/section5/section-4.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images5">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-2.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_1/section5/section-5.jpeg" class="planning swiper-slide" data-fancybox="images5">
+                            <img src="assets/images/section/building_1/section5/section-5.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images5">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-3.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_1/section5/section-6.jpeg" class="planning swiper-slide" data-fancybox="images5">
+                            <img src="assets/images/section/building_1/section5/section-6.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images5">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-2.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_1/section5/section-7.jpeg" class="planning swiper-slide" data-fancybox="images5">
+                            <img src="assets/images/section/building_1/section5/section-7.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images5">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-3.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_1/section5/section-8.jpeg" class="planning swiper-slide" data-fancybox="images5">
+                            <img src="assets/images/section/building_1/section5/section-8.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images5">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-2.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_1/section5/section-9.jpeg" class="planning swiper-slide" data-fancybox="images5">
+                            <img src="assets/images/section/building_1/section5/section-9.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images5">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-3.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_1/section5/section-10.jpeg" class="planning swiper-slide" data-fancybox="images5">
+                            <img src="assets/images/section/building_1/section5/section-10.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images5">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-2.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_1/section5/section-11.jpeg" class="planning swiper-slide" data-fancybox="images5">
+                            <img src="assets/images/section/building_1/section5/section-11.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images5">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-3.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_1/section5/section-12.jpeg" class="planning swiper-slide" data-fancybox="images5">
+                            <img src="assets/images/section/building_1/section5/section-12.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images5">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-2.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_1/section5/section-13.jpeg" class="planning swiper-slide" data-fancybox="images5">
+                            <img src="assets/images/section/building_1/section5/section-13.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images5">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-3.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_1/section5/section-14.jpeg" class="planning swiper-slide" data-fancybox="images5">
+                            <img src="assets/images/section/building_1/section5/section-14.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images5">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-2.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_1/section5/section-15.jpeg" class="planning swiper-slide" data-fancybox="images5">
+                            <img src="assets/images/section/building_1/section5/section-15.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images5">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-2.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_1/section5/section-16.jpeg" class="planning swiper-slide" data-fancybox="images5">
+                            <img src="assets/images/section/building_1/section5/section-16.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
                     </div>
                 </div>
                 <!-- ПЛАН КВАРТИР ПО ЭТАЖАМ 6-Я СЕКЦИИ -->
                 <div class="building1_section6 swiper-container hidden-sections-slides swiper__container">
                     <div class="swiper-wrapper">
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images6">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-2.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_1/section6/section-2.jpeg" class="planning swiper-slide" data-fancybox="images6">
+                            <img src="assets/images/section/building_1/section6/section-2.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-3.jpg" class="planning swiper-slide" data-fancybox="images6">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-3.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_1/section6/section-2.jpeg" class="planning swiper-slide" data-fancybox="images6">
+                            <img src="assets/images/section/building_1/section6/section-2.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images6">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-2.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_1/section6/section-3.jpeg" class="planning swiper-slide" data-fancybox="images6">
+                            <img src="assets/images/section/building_1/section6/section-3.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images6">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-3.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_1/section6/section-4.jpeg" class="planning swiper-slide" data-fancybox="images6">
+                            <img src="assets/images/section/building_1/section6/section-4.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images6">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-2.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_1/section6/section-5.jpeg" class="planning swiper-slide" data-fancybox="images6">
+                            <img src="assets/images/section/building_1/section6/section-5.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images6">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-3.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_1/section6/section-6.jpeg" class="planning swiper-slide" data-fancybox="images6">
+                            <img src="assets/images/section/building_1/section6/section-6.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images6">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-2.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_1/section6/section-7.jpeg" class="planning swiper-slide" data-fancybox="images6">
+                            <img src="assets/images/section/building_1/section6/section-7.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images6">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-3.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_1/section6/section-8.jpeg" class="planning swiper-slide" data-fancybox="images6">
+                            <img src="assets/images/section/building_1/section6/section-8.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images6">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-2.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_1/section6/section-9.jpeg" class="planning swiper-slide" data-fancybox="images6">
+                            <img src="assets/images/section/building_1/section6/section-9.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images6">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-3.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_1/section6/section-10.jpeg" class="planning swiper-slide" data-fancybox="images6">
+                            <img src="assets/images/section/building_1/section6/section-10.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images6">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-2.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_1/section6/section-11.jpeg" class="planning swiper-slide" data-fancybox="images6">
+                            <img src="assets/images/section/building_1/section6/section-11.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images6">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-3.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_1/section6/section-12.jpeg" class="planning swiper-slide" data-fancybox="images6">
+                            <img src="assets/images/section/building_1/section6/section-12.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images6">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-2.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_1/section6/section-13.jpeg" class="planning swiper-slide" data-fancybox="images6">
+                            <img src="assets/images/section/building_1/section6/section-13.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images6">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-3.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_1/section6/section-14.jpeg" class="planning swiper-slide" data-fancybox="images6">
+                            <img src="assets/images/section/building_1/section6/section-14.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images6">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-2.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_1/section6/section-15.jpeg" class="planning swiper-slide" data-fancybox="images6">
+                            <img src="assets/images/section/building_1/section6/section-15.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images6">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-2.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_1/section6/section-16.jpeg" class="planning swiper-slide" data-fancybox="images6">
+                            <img src="assets/images/section/building_1/section6/section-16.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-3.jpg" class="planning swiper-slide" data-fancybox="images6">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-3.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_1/section6/section-17.jpeg" class="planning swiper-slide" data-fancybox="images6">
+                            <img src="assets/images/section/building_1/section6/section-17.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images6">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-2.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_1/section6/section-18.jpeg" class="planning swiper-slide" data-fancybox="images6">
+                            <img src="assets/images/section/building_1/section6/section-18.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images6">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-3.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_1/section6/section-19.jpeg" class="planning swiper-slide" data-fancybox="images6">
+                            <img src="assets/images/section/building_1/section6/section-19.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images6">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-2.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_1/section6/section-20.jpeg" class="planning swiper-slide" data-fancybox="images6">
+                            <img src="assets/images/section/building_1/section6/section-20.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images6">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-3.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_1/section6/section-21.jpeg" class="planning swiper-slide" data-fancybox="images6">
+                            <img src="assets/images/section/building_1/section6/section-21.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images6">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-2.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_1/section6/section-22.jpeg" class="planning swiper-slide" data-fancybox="images6">
+                            <img src="assets/images/section/building_1/section6/section-22.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images6">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-3.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_1/section6/section-23.jpeg" class="planning swiper-slide" data-fancybox="images6">
+                            <img src="assets/images/section/building_1/section6/section-23.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images6">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-2.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_1/section6/section-24.jpeg" class="planning swiper-slide" data-fancybox="images6">
+                            <img src="assets/images/section/building_1/section6/section-24.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
                     </div>
                 </div>
                 <!-- ПЛАН КВАРТИР ПО ЭТАЖАМ ДОМ 2-й / 1-Я СЕКЦИИ -->
                 <div class="building2_section1 swiper-container hidden-sections-slides swiper__container">
                     <div class="swiper-wrapper">
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images21">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-2.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_2/section1/section-2.jpeg" class="planning swiper-slide" data-fancybox="images21">
+                            <img src="assets/images/section/building_2/section1/section-2.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-3.jpg" class="planning swiper-slide" data-fancybox="images21">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-3.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_2/section1/section-2.jpeg" class="planning swiper-slide" data-fancybox="images21">
+                            <img src="assets/images/section/building_2/section1/section-2.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images21">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-2.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_2/section1/section-3.jpeg" class="planning swiper-slide" data-fancybox="images21">
+                            <img src="assets/images/section/building_2/section1/section-3.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images21">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-3.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_2/section1/section-4.jpeg" class="planning swiper-slide" data-fancybox="images21">
+                            <img src="assets/images/section/building_2/section1/section-4.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images21">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-2.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_2/section1/section-5.jpeg" class="planning swiper-slide" data-fancybox="images21">
+                            <img src="assets/images/section/building_2/section1/section-5.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images21">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-3.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_2/section1/section-6.jpeg" class="planning swiper-slide" data-fancybox="images21">
+                            <img src="assets/images/section/building_2/section1/section-6.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images21">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-2.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_2/section1/section-7.jpeg" class="planning swiper-slide" data-fancybox="images21">
+                            <img src="assets/images/section/building_2/section1/section-7.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images21">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-3.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_2/section1/section-8.jpeg" class="planning swiper-slide" data-fancybox="images21">
+                            <img src="assets/images/section/building_2/section1/section-8.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images21">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-2.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_2/section1/section-9.jpeg" class="planning swiper-slide" data-fancybox="images21">
+                            <img src="assets/images/section/building_2/section1/section-9.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images21">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-3.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_2/section1/section-10.jpeg" class="planning swiper-slide" data-fancybox="images21">
+                            <img src="assets/images/section/building_2/section1/section-10.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images21">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-2.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_2/section1/section-11.jpeg" class="planning swiper-slide" data-fancybox="images21">
+                            <img src="assets/images/section/building_2/section1/section-11.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images21">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-3.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_2/section1/section-12.jpeg" class="planning swiper-slide" data-fancybox="images21">
+                            <img src="assets/images/section/building_2/section1/section-12.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images21">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-2.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_2/section1/section-13.jpeg" class="planning swiper-slide" data-fancybox="images21">
+                            <img src="assets/images/section/building_2/section1/section-13.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images21">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-3.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_2/section1/section-14.jpeg" class="planning swiper-slide" data-fancybox="images21">
+                            <img src="assets/images/section/building_2/section1/section-14.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images21">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-2.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_2/section1/section-15.jpeg" class="planning swiper-slide" data-fancybox="images21">
+                            <img src="assets/images/section/building_2/section1/section-15.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
                     </div>
                 </div>
                 <!-- ПЛАН КВАРТИР ПО ЭТАЖАМ ДОМ 2-й / 2-Я СЕКЦИИ -->
                 <div class="building2_section2 swiper-container hidden-sections-slides swiper__container">
                     <div class="swiper-wrapper">
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images22">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-2.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_2/section2/section-2.jpeg" class="planning swiper-slide" data-fancybox="images22">
+                            <img src="assets/images/section/building_2/section2/section-2.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-3.jpg" class="planning swiper-slide" data-fancybox="images22">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-3.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_2/section2/section-2.jpeg" class="planning swiper-slide" data-fancybox="images22">
+                            <img src="assets/images/section/building_2/section2/section-2.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images22">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-2.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_2/section2/section-3.jpeg" class="planning swiper-slide" data-fancybox="images22">
+                            <img src="assets/images/section/building_2/section2/section-3.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images22">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-3.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_2/section2/section-4.jpeg" class="planning swiper-slide" data-fancybox="images22">
+                            <img src="assets/images/section/building_2/section2/section-4.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images22">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-2.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_2/section2/section-5.jpeg" class="planning swiper-slide" data-fancybox="images22">
+                            <img src="assets/images/section/building_2/section2/section-5.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images22">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-3.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_2/section2/section-6.jpeg" class="planning swiper-slide" data-fancybox="images22">
+                            <img src="assets/images/section/building_2/section2/section-6.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
                     </div>
                 </div>
                 <!-- ПЛАН КВАРТИР ПО ЭТАЖАМ ДОМ 2-й / 3-Я СЕКЦИИ -->
                 <div class="building2_section3 swiper-container hidden-sections-slides swiper__container">
                     <div class="swiper-wrapper">
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images23">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-2.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_2/section3/section-1.jpeg" class="planning swiper-slide" data-fancybox="images23">
+                            <img src="assets/images/section/building_2/section3/section-1.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-3.jpg" class="planning swiper-slide" data-fancybox="images23">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-3.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_2/section3/section-2.jpeg" class="planning swiper-slide" data-fancybox="images23">
+                            <img src="assets/images/section/building_2/section3/section-2.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images23">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-2.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_2/section3/section-3.jpeg" class="planning swiper-slide" data-fancybox="images23">
+                            <img src="assets/images/section/building_2/section3/section-3.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images23">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-3.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_2/section3/section-4.jpeg" class="planning swiper-slide" data-fancybox="images23">
+                            <img src="assets/images/section/building_2/section3/section-4.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images23">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-2.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_2/section3/section-5.jpeg" class="planning swiper-slide" data-fancybox="images23">
+                            <img src="assets/images/section/building_2/section3/section-5.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images23">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-3.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_2/section3/section-6.jpeg" class="planning swiper-slide" data-fancybox="images23">
+                            <img src="assets/images/section/building_2/section3/section-6.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images23">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-2.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_2/section3/section-7.jpeg" class="planning swiper-slide" data-fancybox="images23">
+                            <img src="assets/images/section/building_2/section3/section-7.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images23">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-3.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_2/section3/section-8.jpeg" class="planning swiper-slide" data-fancybox="images23">
+                            <img src="assets/images/section/building_2/section3/section-8.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images23">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-2.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_2/section3/section-9.jpeg" class="planning swiper-slide" data-fancybox="images23">
+                            <img src="assets/images/section/building_2/section3/section-9.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images23">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-3.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_2/section3/section-9.jpeg" class="planning swiper-slide" data-fancybox="images23">
+                            <img src="assets/images/section/building_2/section3/section-9.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images23">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-2.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_2/section3/section-11.jpeg" class="planning swiper-slide" data-fancybox="images23">
+                            <img src="assets/images/section/building_2/section3/section-11.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images23">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-3.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_2/section3/section-12.jpeg" class="planning swiper-slide" data-fancybox="images23">
+                            <img src="assets/images/section/building_2/section3/section-12.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images23">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-2.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_2/section3/section-13-14.jpeg" class="planning swiper-slide" data-fancybox="images23">
+                            <img src="assets/images/section/building_2/section3/section-13-14.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images23">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-3.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_2/section3/section-13-14.jpeg" class="planning swiper-slide" data-fancybox="images23">
+                            <img src="assets/images/section/building_2/section3/section-13-14.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images23">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-2.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_2/section3/section-15.jpeg" class="planning swiper-slide" data-fancybox="images23">
+                            <img src="assets/images/section/building_2/section3/section-15.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images23">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-3.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_2/section3/section-16.jpeg" class="planning swiper-slide" data-fancybox="images23">
+                            <img src="assets/images/section/building_2/section3/section-16.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images23">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-2.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_2/section3/section-17.jpeg" class="planning swiper-slide" data-fancybox="images23">
+                            <img src="assets/images/section/building_2/section3/section-17.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
                     </div>
                 </div>
                 <!-- ПЛАН КВАРТИР ПО ЭТАЖАМ ДОМ 2-й / 4-Я СЕКЦИИ -->
                 <div class="building2_section4 swiper-container hidden-sections-slides swiper__container">
                     <div class="swiper-wrapper">
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images24">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-2.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_2/section4/section-1.jpeg" class="planning swiper-slide" data-fancybox="images24">
+                            <img src="assets/images/section/building_2/section4/section-1.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-3.jpg" class="planning swiper-slide" data-fancybox="images24">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-3.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_2/section4/section-2.jpeg" class="planning swiper-slide" data-fancybox="images24">
+                            <img src="assets/images/section/building_2/section4/section-2.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images24">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-2.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_2/section4/section-3-4.jpeg" class="planning swiper-slide" data-fancybox="images24">
+                            <img src="assets/images/section/building_2/section4/section-3-4.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images24">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-3.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_2/section4/section-3-4.jpeg" class="planning swiper-slide" data-fancybox="images24">
+                            <img src="assets/images/section/building_2/section4/section-3-4.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images24">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-2.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_2/section4/section-5.jpeg" class="planning swiper-slide" data-fancybox="images24">
+                            <img src="assets/images/section/building_2/section4/section-5.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images24">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-3.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_2/section4/section-6.jpeg" class="planning swiper-slide" data-fancybox="images24">
+                            <img src="assets/images/section/building_2/section4/section-6.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images24">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-2.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_2/section4/section-7.jpeg" class="planning swiper-slide" data-fancybox="images24">
+                            <img src="assets/images/section/building_2/section4/section-7.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images24">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-3.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_2/section4/section-8.jpeg" class="planning swiper-slide" data-fancybox="images24">
+                            <img src="assets/images/section/building_2/section4/section-8.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images24">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-2.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_2/section4/section-9.jpeg" class="planning swiper-slide" data-fancybox="images24">
+                            <img src="assets/images/section/building_2/section4/section-9.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images24">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-3.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_2/section4/section-10.jpeg" class="planning swiper-slide" data-fancybox="images24">
+                            <img src="assets/images/section/building_2/section4/section-10.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images24">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-2.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_2/section4/section-11.jpeg" class="planning swiper-slide" data-fancybox="images24">
+                            <img src="assets/images/section/building_2/section4/section-11.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images24">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-3.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_2/section4/section-12.jpeg" class="planning swiper-slide" data-fancybox="images24">
+                            <img src="assets/images/section/building_2/section4/section-12.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images24">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-2.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_2/section4/section-13.jpeg" class="planning swiper-slide" data-fancybox="images24">
+                            <img src="assets/images/section/building_2/section4/section-13.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images24">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-3.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_2/section4/section-14.jpeg" class="planning swiper-slide" data-fancybox="images24">
+                            <img src="assets/images/section/building_2/section4/section-14.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images24">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-2.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_2/section4/section-15.jpeg" class="planning swiper-slide" data-fancybox="images24">
+                            <img src="assets/images/section/building_2/section4/section-15.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
                     </div>
                 </div>
                 <!-- ПЛАН КВАРТИР ПО ЭТАЖАМ ДОМ 2-й / 5-Я СЕКЦИИ -->
                 <div class="building2_section5 swiper-container hidden-sections-slides swiper__container">
                     <div class="swiper-wrapper">
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images25">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-2.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_2/section5/section-1.jpeg" class="planning swiper-slide" data-fancybox="images25">
+                            <img src="assets/images/section/building_2/section5/section-1.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-3.jpg" class="planning swiper-slide" data-fancybox="images25">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-3.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_2/section5/section-2.jpeg" class="planning swiper-slide" data-fancybox="images25">
+                            <img src="assets/images/section/building_2/section5/section-2.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images25">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-2.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_2/section5/section-3-4.jpeg" class="planning swiper-slide" data-fancybox="images25">
+                            <img src="assets/images/section/building_2/section5/section-3-4.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images25">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-3.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_2/section5/section-3-4.jpeg" class="planning swiper-slide" data-fancybox="images25">
+                            <img src="assets/images/section/building_2/section5/section-3-4.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images25">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-2.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_2/section5/section-5.jpeg" class="planning swiper-slide" data-fancybox="images25">
+                            <img src="assets/images/section/building_2/section5/section-5.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images25">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-3.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_2/section5/section-6.jpeg" class="planning swiper-slide" data-fancybox="images25">
+                            <img src="assets/images/section/building_2/section5/section-6.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images25">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-2.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_2/section5/section-7.jpeg" class="planning swiper-slide" data-fancybox="images25">
+                            <img src="assets/images/section/building_2/section5/section-7.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images25">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-3.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_2/section5/section-8-9.jpeg" class="planning swiper-slide" data-fancybox="images25">
+                            <img src="assets/images/section/building_2/section5/section-8-9.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images25">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-2.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_2/section5/section-8-9.jpeg" class="planning swiper-slide" data-fancybox="images25">
+                            <img src="assets/images/section/building_2/section5/section-8-9.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images25">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-3.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_2/section5/section-10.jpeg" class="planning swiper-slide" data-fancybox="images25">
+                            <img src="assets/images/section/building_2/section5/section-10.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images25">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-2.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_2/section5/section-11.jpeg" class="planning swiper-slide" data-fancybox="images25">
+                            <img src="assets/images/section/building_2/section5/section-11.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images25">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-3.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_2/section5/section-12.jpeg" class="planning swiper-slide" data-fancybox="images25">
+                            <img src="assets/images/section/building_2/section5/section-12.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images25">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-2.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_2/section5/section-13.jpeg" class="planning swiper-slide" data-fancybox="images25">
+                            <img src="assets/images/section/building_2/section5/section-13.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images25">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-3.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_2/section5/section-14.jpeg" class="planning swiper-slide" data-fancybox="images25">
+                            <img src="assets/images/section/building_2/section5/section-14.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images25">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-2.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_2/section5/section-15.jpeg" class="planning swiper-slide" data-fancybox="images25">
+                            <img src="assets/images/section/building_2/section5/section-15.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images25">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-3.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_2/section5/section-16.jpeg" class="planning swiper-slide" data-fancybox="images25">
+                            <img src="assets/images/section/building_2/section5/section-16.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images25">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-2.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_2/section5/section-17.jpeg" class="planning swiper-slide" data-fancybox="images25">
+                            <img src="assets/images/section/building_2/section5/section-17.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
                     </div>
                 </div>
                 <!-- ПЛАН КВАРТИР ПО ЭТАЖАМ ДОМ 2-й / 6-Я СЕКЦИИ -->
                 <div class="building2_section6 swiper-container hidden-sections-slides swiper__container">
                     <div class="swiper-wrapper">
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images26">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-2.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_2/section6/section-1.jpeg" class="planning swiper-slide" data-fancybox="images26">
+                            <img src="assets/images/section/building_2/section6/section-1.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-3.jpg" class="planning swiper-slide" data-fancybox="images26">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-3.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_2/section6/section-2.jpeg" class="planning swiper-slide" data-fancybox="images26">
+                            <img src="assets/images/section/building_2/section6/section-2.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images26">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-2.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_2/section6/section-3.jpeg" class="planning swiper-slide" data-fancybox="images26">
+                            <img src="assets/images/section/building_2/section6/section-3.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images26">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-3.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_2/section6/section-4.jpeg" class="planning swiper-slide" data-fancybox="images26">
+                            <img src="assets/images/section/building_2/section6/section-4.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images26">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-2.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_2/section6/section-5.jpeg" class="planning swiper-slide" data-fancybox="images26">
+                            <img src="assets/images/section/building_2/section6/section-5.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images26">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-3.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_2/section6/section-6.jpeg" class="planning swiper-slide" data-fancybox="images26">
+                            <img src="assets/images/section/building_2/section6/section-6.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images26">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-2.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_2/section6/section-7.jpeg" class="planning swiper-slide" data-fancybox="images26">
+                            <img src="assets/images/section/building_2/section6/section-7.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images26">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-3.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_2/section6/section-8.jpeg" class="planning swiper-slide" data-fancybox="images26">
+                            <img src="assets/images/section/building_2/section6/section-8.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images26">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-2.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_2/section6/section-9.jpeg" class="planning swiper-slide" data-fancybox="images26">
+                            <img src="assets/images/section/building_2/section6/section-9.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images26">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-3.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_2/section6/section-10.jpeg" class="planning swiper-slide" data-fancybox="images26">
+                            <img src="assets/images/section/building_2/section6/section-10.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images26">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-2.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_2/section6/section-11.jpeg" class="planning swiper-slide" data-fancybox="images26">
+                            <img src="assets/images/section/building_2/section6/section-11.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images26">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-3.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_2/section6/section-12.jpeg" class="planning swiper-slide" data-fancybox="images26">
+                            <img src="assets/images/section/building_2/section6/section-12.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images26">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-2.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_2/section6/section-13.jpeg" class="planning swiper-slide" data-fancybox="images26">
+                            <img src="assets/images/section/building_2/section6/section-13.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images26">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-3.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_2/section6/section-14.jpeg" class="planning swiper-slide" data-fancybox="images26">
+                            <img src="assets/images/section/building_2/section6/section-14.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images26">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-2.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_2/section6/section-15.jpeg" class="planning swiper-slide" data-fancybox="images26">
+                            <img src="assets/images/section/building_2/section6/section-15.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
                     </div>
                 </div>
                 <!-- ПЛАН КВАРТИР ПО ЭТАЖАМ ДОМ 2-й / 7-Я СЕКЦИИ -->
                 <div class="building2_section7 swiper-container hidden-sections-slides swiper__container">
                     <div class="swiper-wrapper">
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images27">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-2.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_2/section7/section-1.jpeg" class="planning swiper-slide" data-fancybox="images27">
+                            <img src="assets/images/section/building_2/section7/section-1.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-3.jpg" class="planning swiper-slide" data-fancybox="images27">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-3.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_2/section7/section-2.jpeg" class="planning swiper-slide" data-fancybox="images27">
+                            <img src="assets/images/section/building_2/section7/section-2.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images27">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-2.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_2/section7/section-3-4.jpeg" class="planning swiper-slide" data-fancybox="images27">
+                            <img src="assets/images/section/building_2/section7/section-3-4.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images27">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-3.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_2/section7/section-3-4.jpeg" class="planning swiper-slide" data-fancybox="images27">
+                            <img src="assets/images/section/building_2/section7/section-3-4.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images27">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-2.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_2/section7/section-5.jpeg" class="planning swiper-slide" data-fancybox="images27">
+                            <img src="assets/images/section/building_2/section7/section-5.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images27">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-3.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_2/section7/section-6.jpeg" class="planning swiper-slide" data-fancybox="images27">
+                            <img src="assets/images/section/building_2/section7/section-6.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images27">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-2.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_2/section7/section-7.jpeg" class="planning swiper-slide" data-fancybox="images27">
+                            <img src="assets/images/section/building_2/section7/section-7.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images27">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-3.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_2/section7/section-8-9.jpeg" class="planning swiper-slide" data-fancybox="images27">
+                            <img src="assets/images/section/building_2/section7/section-8-9.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images27">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-2.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_2/section7/section-8-9.jpeg" class="planning swiper-slide" data-fancybox="images27">
+                            <img src="assets/images/section/building_2/section7/section-8-9.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images27">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-3.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_2/section7/section-10.jpeg" class="planning swiper-slide" data-fancybox="images27">
+                            <img src="assets/images/section/building_2/section7/section-10.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images27">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-2.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_2/section7/section-11.jpeg" class="planning swiper-slide" data-fancybox="images27">
+                            <img src="assets/images/section/building_2/section7/section-11.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images27">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-3.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_2/section7/section-12.jpeg" class="planning swiper-slide" data-fancybox="images27">
+                            <img src="assets/images/section/building_2/section7/section-12.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images27">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-2.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_2/section7/section-13.jpeg" class="planning swiper-slide" data-fancybox="images27">
+                            <img src="assets/images/section/building_2/section7/section-13.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images27">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-3.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_2/section7/section-14.jpeg" class="planning swiper-slide" data-fancybox="images27">
+                            <img src="assets/images/section/building_2/section7/section-14.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images27">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-2.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_2/section7/section-15.jpeg" class="planning swiper-slide" data-fancybox="images27">
+                            <img src="assets/images/section/building_2/section7/section-15.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images27">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-3.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_2/section7/section-16.jpeg" class="planning swiper-slide" data-fancybox="images27">
+                            <img src="assets/images/section/building_2/section7/section-16.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
-                        <a href="assets/images/section/building_1/section-2.jpg" class="planning swiper-slide" data-fancybox="images27">
-                            <img id="sliderImg" src="assets/images/section/building_1/section-2.jpg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
+                        <a href="assets/images/section/building_2/section7/section-17.jpeg" class="planning swiper-slide" data-fancybox="images27">
+                            <img src="assets/images/section/building_2/section7/section-17.jpeg" alt="СЕКЦИИ И ПЛАНИРОВКИ">
                         </a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/swiper-bundle.min.js"></script>
+    <script src="./assets/js/fancybox.min.js"></script>
+    <script src="./assets/js/jquery.maskedinput.min.js"></script>
     <script src="./assets/js/main.js"></script>
 </body>
 </html>
