@@ -723,6 +723,92 @@ img {
     margin-right: 32px;
 }
 /* END advantages section style */
+/* START form section style */
+.faq {
+    margin-top: 60px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    position: relative;
+}
+
+.faq__container {
+    max-width: 1200px;
+    width: 90%;
+    background-color: #F6F8F1;
+    background-image: url('../images/FAQ/building.png');
+    background-repeat: no-repeat;
+    background-position: right 165px;
+    background-size: 615px;
+    border: 3px solid #87AE1B;
+    position: relative;
+}
+
+.faq__container::before {
+    content: "";
+    position: absolute;
+    background-image: url('../images/FAQ/woman.png');
+    width: 527px;
+    height: 546px;
+    right: 27px;
+    bottom: 0;
+}
+
+.faq-form {
+    max-width: 424px;
+    width: 100%;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-left: 72px;
+}
+
+.faq-form__title {
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 110.6%;
+    text-transform: uppercase;
+    color: #87AE1B;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.faq-form__text {
+    margin-top: 32px;
+    margin-bottom: 32px;
+    font-size: 16px;
+    line-height: 140%;
+    color: #333333;
+}
+
+.faq-form .main-button {
+    min-width: 316px;
+    padding: 16px 10px;
+}
+
+.faq-label {
+    display: block;
+    max-width: 312px;
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.faq-input {
+    border: 1px solid #BDBDBD;
+    box-sizing: border-box;
+    border-radius: 3px;
+    max-width: 312px;
+    width: 100%;
+    padding: 15px 10px;
+    background-color: transparent;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #333;
+}
+
+.faq-input::placeholder {
+    color: #BDBDBD
+}
+/* END form section style */
 ::-webkit-scrollbar {width: 12px;height: 12px;}
 ::-webkit-scrollbar-track-piece {background:rgba(0,0,0,0);}
 ::-webkit-scrollbar-thumb:vertical {height:10px;background:#87AE1B;}

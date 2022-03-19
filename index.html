@@ -1443,6 +1443,35 @@
             </div>
         </div>
     </div>
+    <div id="faqForm" class="faq">
+        <div class="wrapper">
+            <div class="faq__container">
+                <form id="formContact" class="faq-form contacts-form" action="" method="POST" autocomplete="off" enctype="multipart/form-data">
+                    <p class="contact-form__message"></p>
+                    <input type="hidden" name="host" value="tairovskie-sady">
+                    <h2 class="faq-form__title contact-form__title">
+                        Возникли вопросы?
+                    </h2>
+                    <p class="faq-form__text">
+                        Наш менеджер расскажет вам об объекте в мельчайших подробностях
+                    </p>
+                    <label class="faq-label">
+                        <input class="faq-input" placeholder="Имя" type="text" name="Имя" id="name" oninput="this.value=this.value.replace(/[^A-Za-z\s]/g,'');" required>
+                    </label>
+                    <label class="faq-label">
+                        <input id="phoneInput1" class="faq-input" placeholder="Номер телефона" type="Телефон" name="Телефон" id="tel" oninput="this.value=this.value.replace(/[^0-9\s]/g,'');" required>
+                    </label>
+                    <input name="theme" type="hidden" class="contact-form__input contact-form__input_theme"  value="Заявка с сайта">
+                    <button type="submit" class="main-button">
+                        Оставить заявку
+                        <svg class="icon">
+                            <use xlink:href="assets/images/sprite.svg#btn-arrow"></use>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
     <script src="./assets/js/jquery.min.js"></script>
     <script src="./assets/js/swiper-bundle.min.js"></script>
     <script src="./assets/js/fancybox.min.js"></script>
