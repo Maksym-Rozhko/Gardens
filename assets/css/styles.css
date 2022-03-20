@@ -1014,6 +1014,67 @@ img {
     object-fit: cover;
 }
 /* END gallery section style */
+/* START contacts section style */
+.contacts {
+    margin-top: 120px;
+}
+
+.contacts-info .phone-number,
+.contacts-info .location-address {
+    color: #333;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    text-decoration: none;
+}
+
+.contacts-info .phone-number .icon,
+.contacts-info .location-address .icon {
+    width: 40px;
+    height: 40px;
+    fill: #87AE1B;
+    margin-right: 8px;
+}
+
+.location-address__text {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.location-address__text .location-accent {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #87AE1B;
+}
+
+.contacts-info {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.location-address {
+    display: flex;
+    align-items: center;
+}
+
+.contacts-info .location-address,
+.contacts-info .phone-number {
+    margin-right: 40px;
+}
+
+.location-map {
+    margin-top: 25px;
+}
+
+.location-map .map-img {
+    width: 100%;
+    display: block;
+}
+/* END contacts section style */
 ::-webkit-scrollbar {width: 12px;height: 12px;}
 ::-webkit-scrollbar-track-piece {background:rgba(0,0,0,0);}
 ::-webkit-scrollbar-thumb:vertical {height:10px;background:#87AE1B;}
