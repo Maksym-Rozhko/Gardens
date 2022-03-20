@@ -1848,6 +1848,62 @@
             <img class="map-img" src="assets/images/contacts/location-map.png" alt="location map">
         </div>
     </div>
+    <footer class="footer">
+        <div class="wrapper">
+            <div class="footer__content">
+                <div class="footer-nav">
+                    <a href="#home" class="header__logo">
+                        <img class="logo" src="assets/images/main-slides/logo.png" alt="ТАИРОВСКИЕ САДЫ">
+                        <strong class="copyright">All right reserved. 2021</strong>
+                    </a>
+                    <nav class="navigation">
+                        <ul class="nav-list">
+                            <li class="nav-list__item">
+                                <a href="#aboutBuilding" class="nav-list__link">
+                                    О жилом комплексе
+                                </a>
+                            </li>
+                            <li class="nav-list__item">
+                                <a href="#planning" class="nav-list__link">
+                                    Планировки
+                                </a>
+                            </li>
+                            <li class="nav-list__item">
+                                <a href="#price" class="nav-list__link">
+                                    Цены
+                                </a>
+                            </li>
+                            <li class="nav-list__item">
+                                <a href="#apartaments" class="nav-list__link">
+                                    Квартиры
+                                </a>
+                            </li>
+                            <li class="nav-list__item">
+                                <a href="#contacts" class="nav-list__link">
+                                    Инфраструктура
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <form id="footerForm" class="footer-form contacts-form" method="POST" action="" utocomplete="off" enctype="multipart/form-data">
+                    <input type="hidden" name="host" value="tairovskie-sady">
+                    <h4 class="footer-form__title">
+                        связаться с нами
+                    </h4>
+                    <label class="footer-label">
+                        <input id="phoneInput2" class="footer-input" placeholder="Номер телефона" type="tel" name="Телефон" id="phone" oninput="this.value=this.value.replace(/[^0-9\s]/g,'');" required>
+                    </label>
+                    <button type="submit" class="main-button">
+                        Связаться
+                        <svg class="icon">
+                            <use xlink:href="assets/images/sprite.svg#btn-arrow"></use>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </footer>
     <script src="./assets/js/jquery.min.js"></script>
     <script src="./assets/js/swiper-bundle.min.js"></script>
     <script src="./assets/js/fancybox.min.js"></script>
