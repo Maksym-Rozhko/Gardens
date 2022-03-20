@@ -966,6 +966,54 @@ img {
     color: #333333;
 }
 /* END tech-character section style */
+/* START gallery section style */
+.gallery {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    position: relative;
+}
+
+.gallery::before {
+    content: "";
+    position: absolute;
+    width: 1382px;
+    height: 95%;
+    background-color: #F6F8F1;
+    border-radius: 0px 3px 3px 0px;
+    z-index: -1;
+}
+
+.top-wrapp {
+    margin-top: 80px;
+    margin-bottom: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 414px;
+}
+
+.gallery-slider__controls .slider-controls .icon {
+    fill: #797979;
+}
+
+.top-wrapp .section-title {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.gallery-slider .swiper-slide {
+    border-radius: 3px;
+    border: 10px solid #87AE1B;
+    background: #87AE1B;
+}
+
+.gallery-slider .swiper-slide img {
+    max-width: 576px;
+    height: 484px;
+    width: 100%;
+    object-fit: cover;
+}
+/* END gallery section style */
 ::-webkit-scrollbar {width: 12px;height: 12px;}
 ::-webkit-scrollbar-track-piece {background:rgba(0,0,0,0);}
 ::-webkit-scrollbar-thumb:vertical {height:10px;background:#87AE1B;}
