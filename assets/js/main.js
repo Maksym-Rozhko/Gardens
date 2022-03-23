@@ -416,55 +416,119 @@ sectionsLabels2.forEach(section => {
   });
 });
 
+const advantagesSlider = new Swiper('.advantages-slider.swiper-container', {
+  slidesPerView: 1,
+  slidesPerGroup: 1,
+  spaceBetween: 20,
 
+  navigation: {
+    nextEl: '.advantages-btn__next',
+    prevEl: '.advantages-btn__prev',
+  },
+});
 
+const priceSlider = new Swiper('.price-slider.swiper-container', {
+  slidesPerView: 4,
 
-// const swiper = new Swiper('.swiper-container', {
-//     slidesPerView: 4,
-//     spaceBetween: 10,
-//     direction: 'horizontal',
+  navigation: {
+    nextEl: '.price-btn__next',
+    prevEl: '.price-btn__prev',
+  },
 
-//     pagination: {
-//         el: '.swiper-pagination',
-//         clickable: true
-//     },
+  breakpoints: {
+    300: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    1000: {
+      slidesPerView: 3,
+    },
+    1400: {
+      slidesPerView: 4,
+    },
+  }
+});
 
-//     breakpoints: {
-//       320: {
-//         slidesPerView: 1,
-//       },
-//       812: {
-//         slidesPerView: 2,
-//       },
-//       1200: {
-//         slidesPerView: 3,
-//       },
-//       1570: {
-//         slidesPerView: 4,
-//       }
-//     }
-// });
+const gallerySlider = new Swiper('.gallery-slider.swiper-container', {
+  slidesPerView: 2,
+  slidesPerGroup: 2,
+  spaceBetween: 32,
+  loop: true,
 
-// const btnsElem = document.querySelectorAll('.scroll-to-form');
-// const scrollToOrder = document.querySelector('.header-top'); 
-// const formInputNameElem = document.querySelector('.form__input'); 
+  navigation: {
+    nextEl: '.gallery-btn__next',
+    prevEl: '.gallery-btn__prev',
+  },
 
-// function smoothScroll() {
-//   const anchors = btnsElem;
-//   for(let anchor of anchors) {
-//     anchor.addEventListener('click', (e) => {
-//       e.preventDefault();
-     
-//       scrollToOrder.scrollIntoView({
-//         behavior: 'smooth',
-//         block: 'start'
-//       });
+  breakpoints: {
+    300: {
+      slidesPerView: 1,
+      slidesPerGroup: 1,
+      spaceBetween: 32,
+    },
+    820: {
+      slidesPerView: 2,
+      slidesPerGroup: 2,
+    },
+  }
+});
 
-//       setTimeout(() => {
-//         formInputNameElem.focus();
-//       }, 1000);
-//     });
-//   }
-// }
-// smoothScroll();
+const anchorsLink = document.querySelectorAll('a.nav-list__link');
+const scrollToTop = document.querySelectorAll('a.header__logo');
+const scrollToForm = document.querySelectorAll('.scroll-to-form');
 
+const removeBurgerOverflow = () => {
+  burgerMenuElem.classList.toggle('burger-menu__active');
+  navigationMobileList.classList.toggle('navigation__active');
+  navigationBackground.classList.toggle('navigation-bg__active');
+};
+
+scrollToForm.forEach(btn => {
+  btn.addEventListener('click', e => {
+    e.preventDefault();
+    const scrollTarget = document.querySelector('#faqForm');
+    const topPadding = 70;
+    const topOffset = topPadding;
+    
+    const elementPosition = scrollTarget.getBoundingClientRect().top;
+    const offsetPosition = elementPosition - topOffset;
+
+    window.scrollBy({
+      top: offsetPosition,
+      behavior: 'smooth',
+    })
+  });
+});
+
+const smoothScroll = (anchors) => {
+  for (let anchor of anchors) {
+    const blockID = anchor.getAttribute('href');
+    anchor.addEventListener('click', (e) => {
+      e.preventDefault();
+
+      if(innerWidth <= 820) {
+        setTimeout(() => {
+          removeBurgerOverflow();
+        }, 500);
+      }
+
+      document.querySelector(blockID).scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+      if (anchor.classList.value === 'nav-list__link' || anchor.classList.value !== 'nav-list__link') {
+        for (let anchor of anchors) {
+          anchor.classList.remove('active-nav-link');
+        }
+        anchor.classList.add('active-nav-link');
+      }
+    });
+  };
+};
+
+smoothScroll(scrollToTop);
+smoothScroll(anchorsLink);
