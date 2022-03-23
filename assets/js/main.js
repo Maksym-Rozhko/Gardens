@@ -532,3 +532,71 @@ const smoothScroll = (anchors) => {
 
 smoothScroll(scrollToTop);
 smoothScroll(anchorsLink);
+
+const btnPopUpCloseElem = document.querySelectorAll('.pop-up__close');
+const popUpOverflow = document.querySelector('.pop-up__overflow');
+const popUpOverflow2 = document.querySelector('.pop-up__overflow2');
+const popUpThanks = document.querySelector('.pop-up__thanks');
+const orderCallElems = document.querySelectorAll('.callback-form');
+
+const openPopUp = () => {
+  popUpOverflow.classList.add('pop-up__active');
+  document.addEventListener('keydown', escapeHandler);
+};
+
+const openPopUpOrder = () => {
+  popUpOverflow2.classList.add('pop-up__active');
+  document.addEventListener('keydown', escapeHandler);
+};
+
+const showPopUpThanks = () => {
+  popUpThanks.classList.add('pop-up__active');
+  document.addEventListener('keydown', escapeHandler);
+};
+
+const closePopUp = () => {
+  popUpOverflow.classList.remove('pop-up__active');
+  popUpOverflow2.classList.remove('pop-up__active');
+  popUpThanks.classList.remove('pop-up__active');
+  document.removeEventListener('keydown', escapeHandler);
+};
+
+const escapeHandler = e => {
+  e.code === 'Escape' ? closePopUp() : false;
+}
+
+setTimeout(() => {
+  openPopUp();
+}, 30000);
+
+btnPopUpCloseElem.forEach(btn => btn.addEventListener('click', () => closePopUp()));
+
+const checkPopUpActive = (popUpElem, e) => {
+  const target = e.target;
+  target.classList.contains('pop-up__close') || target === popUpElem ? closePopUp() : false;
+};
+
+popUpOverflow.addEventListener('click', e => checkPopUpActive(popUpOverflow, e));
+
+popUpOverflow2.addEventListener('click', e => checkPopUpActive(popUpOverflow2, e));
+
+popUpThanks.addEventListener('click', e => checkPopUpActive(popUpThanks, e));
+
+orderCallElems.forEach(item => {
+  item.addEventListener('click', e => {
+    e.preventDefault();
+    openPopUpOrder();
+  });
+});
+
+const clearInputs = () => {
+  const allInputs = document.querySelectorAll('input');
+  allInputs.forEach(input => input.value = '');
+};
+
+jQuery(function(){
+  jQuery("#phoneInput1").mask("+38(099) 999-9999");
+  jQuery("#phoneInput2").mask("+38(099) 999-9999");
+  jQuery("#phoneInput3").mask("+38(099) 999-9999");
+  jQuery("#phoneInput4").mask("+38(099) 999-9999");
+});
