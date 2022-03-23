@@ -594,6 +594,47 @@ const clearInputs = () => {
   allInputs.forEach(input => input.value = '');
 };
 
+jQuery(".contacts-form").on("submit", function(e) {
+  e.preventDefault();
+  jQuery.ajax({
+      type: "POST",
+      url: "https://jsonplaceholder.typicode.com/posts",
+      data: jQuery(this).serialize(),
+      success: function(response) {
+        setTimeout(() => {
+            clearInputs();
+            showPopUpThanks();
+        }, 500);
+      },
+      error: function(response) {
+          console.log('Eror');
+      }
+  });
+  return false;
+});
+
+jQuery(".pop-up__form").on("submit", function(e) {
+  e.preventDefault();
+  jQuery.ajax({
+      type: "POST",
+      url: "https://jsonplaceholder.typicode.com/posts",
+      data: jQuery(this).serialize(),
+      success: function(response) {
+        setTimeout(() => {
+            clearInputs();
+            closePopUp();
+        }, 500);
+        setTimeout(() => {
+            showPopUpThanks();
+        }, 1000);
+      },
+      error: function(response) {
+          console.log('Eror');
+      }
+  });
+  return false;
+});
+
 jQuery(function(){
   jQuery("#phoneInput1").mask("+38(099) 999-9999");
   jQuery("#phoneInput2").mask("+38(099) 999-9999");
